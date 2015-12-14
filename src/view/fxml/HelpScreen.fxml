@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+
+<VBox		xmlns:fx="http://javafx.com/fxml/1"
+			stylesheets="/view/css/application.css"
+			styleClass="root">
+
+	<Label text="Developers"  style="-fx-font-size: 30px"></Label>
+	<Label text="João Lucas Rulff da Costa" ></Label>
+	<Label text="Matheus de Sousa Bernardo" ></Label>
+	<Label text="Vinicius Carvalho Machado" ></Label>
+	
+
+</VBox>
+

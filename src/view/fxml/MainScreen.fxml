@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+			stylesheets="/view/css/application.css"
+			styleClass="root"
+			fx:controller="controller.Controller">
+			
+			
+	<top>
+		
+		<VBox>
+			
+			<MenuBar>
+				
+				<Menu text="File">
+					
+					<MenuItem text="New" onAction="#newEvaluation"/>
+				
+				</Menu>
+			
+			</MenuBar>
+		
+		</VBox>
+	
+	</top>
+	
+	
+
+	<left>
+	
+		<GridPane styleClass = "leftGridPane">
+		
+			<Label  text="N of Transitions:" 
+					GridPane.rowIndex="0"
+					GridPane.columnIndex="0"/>
+					
+			<TextField style="-fx-max-width: 30"
+					GridPane.rowIndex="0"
+					GridPane.columnIndex="1"
+					fx:id="numberOfTransitionsTextField"/>
+					
+			<Label  text="N of Places:" 
+					GridPane.rowIndex="1"
+					GridPane.columnIndex="0"/>
+					
+			<TextField style="-fx-max-width: 30"
+					GridPane.rowIndex="1"
+					GridPane.columnIndex="1"
+					fx:id="numberOfPlacesTextField"/>
+					
+			<Button 
+				    text="Generate"
+				    GridPane.rowIndex="2"
+				    GridPane.columnIndex="0" 
+				    onAction="#generatePetriNet"/>
+					
+			
+	
+		</GridPane>
+	
+	</left>
+	
+	<right>
+	
+		<GridPane 	styleClass="rightGridPane" 
+					fx:id="placesAndTransitionsGridPane">
+		
+			
+		
+		</GridPane>
+	
+	</right>
+	
+	<center>
+	
+		<VBox styleClass="centerGridPane" 
+			  fx:id="resultVbox">
+		
+		
+		</VBox>
+	
+	</center>
+	
+	<bottom>
+	
+		<HBox styleClass="bottomHbox" 
+			  fx:id="markingHbox">
+		
+		
+		</HBox>
+	
+	</bottom>
+	
+	
+	
+</BorderPane>
+

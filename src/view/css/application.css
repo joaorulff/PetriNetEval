@@ -1,0 +1,30 @@
+.root{
+	-fx-alignment: center bottom;
+}
+
+.leftGridPane{
+	
+	-fx-padding: 10;
+	-fx-vgap: 20;
+	-fx-hgap: 10;
+	
+	
+}
+
+.rightGridPane{
+	-fx-padding: 10;
+	-fx-vgap: 10;
+	
+}
+
+.centerGridPane{
+	-fx-padding: 50;
+	-fx-alignment: center;
+}
+
+.bottomHbox{
+	
+	-fx-padding: 10;
+	-fx-vgap: 20;
+	-fx-hgap: 10;
+}
